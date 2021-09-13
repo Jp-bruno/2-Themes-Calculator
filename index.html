@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" class='style style1' href="./style1.css">
+</head>
+
+<!---Falta implementar a mudança de temas-->
+
+<body>
+    <main>
+        <div id='toggle_theme_wrapper'>
+            <div id="theme_button_wrapper">
+                <button id='theme_button'></button>
+            </div>
+        </div>
+        <div id="corpo">
+            <div id='tela'>
+                <input type="text" id="current_operation_display" readonly>
+                <input type="text" id="current_number_display" readonly>
+            </div>
+            <div id="teclado">
+                <div class='row'>
+                    <button value='1' class='btn_num button'>1</button>
+                    <button value='2' class='btn_num button'>2</button>
+                    <button value='3' class='btn_num button'>3</button>
+                    <button value='+' class='operador button'>+</button>
+                </div>
+
+                <div class='row'>
+                    <button value='4' class='btn_num button'>4</button>
+                    <button value='5' class='btn_num button'>5</button>
+                    <button value='6' class='btn_num button'>6</button>
+                    <button value='-' class='operador button'>-</button>
+                </div>
+
+                <div class='row'>
+                    <button value='7' class='btn_num button'>7</button>
+                    <button value='8' class='btn_num button'>8</button>
+                    <button value='9' class='btn_num button'>9</button>
+                    <button value='*' class='operador button'>*</button>
+                </div>
+
+                <div class='row'>
+                    <button value='apagar' class='button' id='apagar'>&larr;</button>
+                    <button value='0' class='btn_num button'>0</button>
+                    <button value='C' class='button'>C</button>
+                    <button value='/' class='operador button'>/</button>
+                </div>
+
+                <div class='row'>
+                    <button value='=' class='igual button' id='igual'>=</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="calculadora.js"></script>
+    <script src="themes.js"></script>
+</body>
+
+</html>
