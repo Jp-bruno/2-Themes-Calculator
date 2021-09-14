@@ -1,15 +1,15 @@
 :root {
-    --azulEscuro: #264653;
-    --azulVerde: #2a9d8f;
-    --amarelo: #e9c46a;
-    --laranja: #f4a261;
-    --vermelho: #e76f51;
+    --primeira: #264653;
+    --segunda: #2a9d8f;
+    --terceira: #e9c46a;
+    --quarta: #f4a261;
+    --quinta: #e76f51;
 
-    --azulEscuroHover: #335F70;
-    --azulVerdeHover: #33C1B1;
-    --amareloHover: #EFD595;
-    --laranjaHover: #F7BC8D;
-    --vermelhoHover: #EE9781;
+    --primeiraH: #335F70;
+    --segundaH: #33C1B1;
+    --terceiraH: #EFD595;
+    --quartaH: #F7BC8D;
+    --quintaH: #EE9781;
 
     --basicButtonShadow: 2px 5px 1px rgba(0, 0, 0, 0.3);
 }
@@ -26,7 +26,7 @@ main {
     width: 100vw;
     display: grid;
     place-items: center;
-    background: #264653;
+    background: var(--primeira);
 }
 
 #corpo {
@@ -35,7 +35,7 @@ main {
     max-width: 320px;
     height: auto;
     padding: 10px 0 50px;
-    background: var(--azulEscuro);
+    background: var(--primeira);
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
     border-radius: 7px;
 }
@@ -95,32 +95,33 @@ main {
 }
 
 .operador:not(button[value='C']) {
-    background-color: var(--amarelo);
+    background-color: var(--terceira);
     box-shadow: var(--basicButtonShadow);
-    color: var(--azulEscuro);
+    color: var(--primeira);
 }
 
 .operador:not(button[value='C']):hover {
-    background-color: var(--amareloHover);
+    background-color: var(--terceiraH);
 }
 
 .btn_num {
-    background-color: var(--azulVerde);
+    background-color: var(--segunda);
     box-shadow: var(--basicButtonShadow);
+    color: var(--terceira);
 }
 
 .btn_num:hover {
-    background-color: var(--azulVerdeHover);
+    background-color: var(--segundaH);
 }
 
 #apagar, #igual {
-    background-color: var(--laranja);
+    background-color: var(--quarta);
     box-shadow: var(--basicButtonShadow);
     color: white;
 }
 
 #apagar:hover, #igual:hover {
-    background-color: var(--laranjaHover);
+    background-color: var(--quartaH);
 }
 
 #igual {
@@ -129,18 +130,18 @@ main {
     font-size: 18px;
     border: none;
     border-radius: 3px;
-    background-color: var(--laranja);
+    background-color: var(--quarta);
     box-shadow: var(--basicButtonShadow);
     cursor: pointer;
 }
 
 button[value='C'] {
-    background-color: var(--vermelho);
+    background-color: var(--quinta);
     box-shadow: var(--basicButtonShadow);
 }
 
 button[value='C']:hover {
-    background-color: var(--vermelhoHover);
+    background-color: var(--quintaH);
 }
 
 #theme_button_wrapper {
@@ -156,9 +157,11 @@ button[value='C']:hover {
     border-radius: 0;
     border: solid 1px black;
     transform: translateY(-15%);
-    background: var(--laranja);
+    background: var(--quarta);
     position: relative;
     transition: left 0.5s, right 0.5s;
+    right: calc(100% - 20px);
+    left: 0%;
 }
 
 

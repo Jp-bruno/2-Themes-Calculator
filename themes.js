@@ -2,24 +2,24 @@ const colors = {};
 
 const botao = document.querySelector("#theme_button");
 
+const temas = [
+    ['--primeira','#264653', '#83C5BE'], 
+    ['--segunda', '#2a9d8f', '#EDF6F9'], 
+    ['--terceira', '#e9c46a', '#006d77'], 
+    ['--quarta', '#f4a261', '#ffddd2'], 
+    ['--quinta', '#e76f51', '#f94144'], 
+    
+    ['--primeiraH','#335F70', '#9ED1CC'], 
+    ['--segundaH', '#33C1B1', '#0096A3'], 
+    ['--terceiraH', '#EFD595', '#006d7783'], 
+    ['--quartaH','#F7BC8D', '#FFF0EB'], 
+    ['--quintaH', '#EE9781', '#FB7477']
+];
 
-
-function createStyleLink(name) {
-    let style = document.createElement('link');
-    style.rel = 'stylesheet';
-    style.classList.add(`${name}`);
-    style.classList.add(`style`);
-    style.href = `./${name}.css`;
-    return style
-}
-
+var qualTema = 2;
 
 function changeTheme() {    
-    const temLink = Array.from(document.querySelectorAll('.style'));
-
-    let qual = temLink[0].className.match(/[0-9]/)[0] === '1' ? '2' : '1';
-    
-    if (qual === "1") {
+    if (qualTema === 1) {
         botao.style.left = '0%'
         botao.style.right = 'calc(100% - 20px)'
 
@@ -28,8 +28,10 @@ function changeTheme() {
         botao.style.left = 'calc(100% - 20px)'
     }
 
-    document.head.appendChild(createStyleLink(`style${qual}`));
-    setTimeout(() => {document.head.removeChild(temLink[0])}, 100);
+    temas.forEach(el => {
+        document.styleSheets[1].cssRules[0].style.setProperty(el[0], el[qualTema])
+    })
+    qualTema = qualTema === 2 ? 1 : 2
 }
 
 botao.addEventListener('click', changeTheme)
