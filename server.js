@@ -9,7 +9,6 @@ var server = http.createServer(requestHandler)
 
 module.exports = server;
 
-
 function requestHandler(req, res) {
     var filename = new URL(req.url, 'http://localhost:3000/').pathname, //aqui é declarado o caminho requisitado pelo cliente
     fullPath,
