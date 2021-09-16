@@ -1,0 +1,30 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "A simple calculator with a dark and a white theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jp-bruno/2-Themes-Calculator.git"
+  },
+  "keywords": [
+    "calculator",
+    "javascript",
+    "js",
+    "css",
+    "themes",
+    "temas",
+    "calculadora",
+    "css-variables",
+    "dynamic"
+  ],
+  "author": "João Pedro Bruno Machado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jp-bruno/2-Themes-Calculator/issues"
+  },
+  "homepage": "https://github.com/Jp-bruno/2-Themes-Calculator#readme"
+}

@@ -5,11 +5,13 @@
     --quarta: #f4a261;
     --quinta: #e76f51;
 
-    --primeiraH: #335F70;
-    --segundaH: #33C1B1;
-    --terceiraH: #EFD595;
-    --quartaH: #F7BC8D;
-    --quintaH: #EE9781;
+    --primeiraHover: #335F70;
+    --segundaHover: #33C1B1;
+    --terceiraHover: #EFD595;
+    --quartaHover: #F7BC8D;
+    --quintaHover: #EE9781;
+
+    --numberFontColor: #EDF6F9;
 
     --basicButtonShadow: 2px 5px 1px rgba(0, 0, 0, 0.3);
 }
@@ -101,17 +103,19 @@ main {
 }
 
 .operador:not(button[value='C']):hover {
-    background-color: var(--terceiraH);
+    background-color: var(--terceiraHover);
 }
 
 .btn_num {
     background-color: var(--segunda);
     box-shadow: var(--basicButtonShadow);
-    color: var(--terceira);
+    color: var(--numberFontColor);
+
 }
 
+
 .btn_num:hover {
-    background-color: var(--segundaH);
+    background-color: var(--segundaHover);
 }
 
 #apagar, #igual {
@@ -121,7 +125,7 @@ main {
 }
 
 #apagar:hover, #igual:hover {
-    background-color: var(--quartaH);
+    background-color: var(--quartaHover);
 }
 
 #igual {
@@ -141,7 +145,7 @@ button[value='C'] {
 }
 
 button[value='C']:hover {
-    background-color: var(--quintaH);
+    background-color: var(--quintaHover);
 }
 
 #theme_button_wrapper {

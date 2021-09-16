@@ -7,13 +7,14 @@ const temas = [
     ['--segunda', '#2a9d8f', '#EDF6F9'], 
     ['--terceira', '#e9c46a', '#006d77'], 
     ['--quarta', '#f4a261', '#ffddd2'], 
-    ['--quinta', '#e76f51', '#f94144'], 
+    ['--quinta', '#e76f51', '#f94144'],
+    ['--numberFontColor', '#EDF6F9', '#006d77'],
     
-    ['--primeiraH','#335F70', '#9ED1CC'], 
-    ['--segundaH', '#33C1B1', '#0096A3'], 
-    ['--terceiraH', '#EFD595', '#006d7783'], 
-    ['--quartaH','#F7BC8D', '#FFF0EB'], 
-    ['--quintaH', '#EE9781', '#FB7477']
+    ['--primeiraHover','#335F70', '#9ED1CC'], 
+    ['--segundaHover', '#33C1B1', '#0096A3'], 
+    ['--terceiraHover', '#EFD595', '#006d7783'], 
+    ['--quartaHover','#F7BC8D', '#FFF0EB'], 
+    ['--quintaHover', '#EE9781', '#FB7477']
 ];
 
 var qualTema = 2;
@@ -31,6 +32,7 @@ function changeTheme() {
     temas.forEach(el => {
         document.styleSheets[1].cssRules[0].style.setProperty(el[0], el[qualTema])
     })
+
     qualTema = qualTema === 2 ? 1 : 2
 }
 
