@@ -12,6 +12,16 @@ Feito apenas com JS + HTML + CSS puros.
 
 English: 
 
-Simple calculator with 2 themes
+Simple calculator with 2 themes: dark and light.
+
+Instructions to start local server:
+  - Download or clone this repository
+  - Open a terminal and type: node index.js
+  - In your web browser, access: http://localhost:3000
+
+Note:
+  You need NodeJS installed to start the local server.
+  
+Done with only pure JS + HTML + CSS. 
 
 By: João Pedro Bruno Machado
